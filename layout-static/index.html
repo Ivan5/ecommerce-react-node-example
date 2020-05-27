@@ -10,6 +10,9 @@
     <div class="grid-container">
       <header class="header">
         <div class="brand">
+          <button onclick="openMenu()">
+            &#9776;
+          </button>
           <a href="index.html">Amazona</a>
         </div>
         <div class="header-links">
@@ -17,18 +20,64 @@
           <a href="siging">Sign In</a>
         </div>
       </header>
-      <main class="main">
+
+      <aside class="sidebar">
+        <h3>
+          Shopping Categories
+          <button class="sidebar-close-button" onclick="colseMenu()">X</button>
+        </h3>
         <ul>
-          <li>Product 1</li>
-          <li>Product 2</li>
-          <li>Product 3</li>
-          <li>Product 4</li>
-          <li>Product 5</li>
+          <li>
+            <a href="#">Pants</a>
+            <a href="#">Shirts</a>
+          </li>
         </ul>
+      </aside>
+
+      <main class="main">
+        <div class="content">
+          <ul class="products">
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="https://via.placeholder.com/150"
+                  alt=""
+                />
+                <div class="product-name"><a href="product">Slim Shirt</a></div>
+                <div class="product-brand">Nike</div>
+                <div class="product-price">$60</div>
+                <div class="product-rating">4.5 start (10 reviews)</div>
+              </div>
+            </li>
+            <li>
+              <div class="product">
+                <img
+                  class="product-image"
+                  src="https://via.placeholder.com/150"
+                  alt=""
+                />
+                <div class="product-name"><a href="product">Slim Shirt</a></div>
+                <div class="product-brand">Nike</div>
+                <div class="product-price">$60</div>
+                <div class="product-rating">4.5 start (10 reviews)</div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </main>
       <footer class="footer">
         All right reser
       </footer>
     </div>
+    <script>
+      function openMenu() {
+        document.querySelector(".sidebar").classList.add("open");
+      }
+
+      function colseMenu() {
+        document.querySelector(".sidebar").classList.remove("open");
+      }
+    </script>
   </body>
 </html>
