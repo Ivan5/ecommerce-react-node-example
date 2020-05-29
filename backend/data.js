@@ -10,6 +10,7 @@ export const data = {
       brand: "Nike",
       rating: 4.5,
       numReviews: 10,
+      countInStock: 6,
     },
     {
       _id: "2",
@@ -21,6 +22,7 @@ export const data = {
       brand: "Adidas",
       rating: 4.5,
       numReviews: 10,
+      countInStock: 6,
     },
     {
       _id: "3",
@@ -32,10 +34,11 @@ export const data = {
       brand: "Reebok",
       rating: 4.5,
       numReviews: 10,
+      countInStock: 6,
     },
     {
       _id: "4",
-      name: "Slim Shirt",
+      name: "Slim Shirt server",
       description:
         "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quasi itaque vitae adipisci ipsam praesentium, vero porro sint cupiditate fugiat, dicta non ducimus voluptate earum nisi voluptatum. Nulla, commodi placeat.",
       image: "https://via.placeholder.com/150",
@@ -43,6 +46,7 @@ export const data = {
       brand: "Fila",
       rating: 4.5,
       numReviews: 10,
+      countInStock: 6,
     },
   ],
 };
