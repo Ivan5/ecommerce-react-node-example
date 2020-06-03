@@ -5,10 +5,16 @@ import {
   productDetailsReducer,
 } from "./reducers/productReducers";
 
-const initialState = {};
+import { cartReducer } from "./reducers/cartReducer";
+import Cookie from "js-cookie";
+
+const cartItems = Cookie.getJSON("cartItems") || [];
+
+const initialState = { cart: { cartItems } };
 const reducer = combineReducers({
   productList: productListReducer,
   productDetails: productDetailsReducer,
+  cart: cartReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
